@@ -1,0 +1,16 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Placeholder image for ADENTA STARTER HOME">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1D5646"/>
+      <stop offset="1" stop-color="#F8F6F0" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#123D32"/>
+  <rect width="1200" height="800" fill="url(#g)"/>
+  <g transform="translate(540 250) scale(2)" fill="none" stroke="#C5A46D" stroke-width="3.5" stroke-linejoin="round">
+    <path d="M32 14 12 32h6v18h28V32h6L32 14Z"/>
+    <path d="M26 50V38h12v12"/>
+  </g>
+  <text x="600" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="40" fill="#F8F6F0">ADENTA STARTER HOME</text>
+  <text x="600" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" letter-spacing="4" fill="#C5A46D">DEMO PLACEHOLDER - IMAGE 2</text>
+</svg>

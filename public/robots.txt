@@ -1,0 +1,7 @@
+# AKWAABA ESTATES is a fictional demonstration site, so crawlers are asked to stay out.
+# When building a real site for a real client, replace this with:
+#   User-agent: *
+#   Allow: /
+#   Sitemap: https://YOUR-DOMAIN/sitemap.xml
+User-agent: *
+Disallow: /

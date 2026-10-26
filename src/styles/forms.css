@@ -1,0 +1,135 @@
+﻿/* ---------- Enquiry panel ---------- */
+.enquiry {
+  padding: 1.5rem;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.enquiry__title {
+  margin: 0 0 0.25rem;
+  font-size: 1.6rem;
+}
+
+.enquiry__intro {
+  margin: 0 0 1.25rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.enquiry__submit {
+  width: 100%;
+}
+
+.enquiry__note {
+  margin: 1rem 0 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+/* ---------- Form fields ---------- */
+.form-field {
+  margin-bottom: 1rem;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--green);
+}
+
+.form-field__optional {
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--muted);
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--ivory);
+  color: var(--ink);
+}
+
+.form-field textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.form-field input:focus-visible,
+.form-field textarea:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 1px;
+}
+
+.form-field--error input,
+.form-field--error textarea {
+  border-color: #b3261e;
+  background: #fff;
+}
+
+.form-field__error {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.35rem;
+  margin: 0.4rem 0 0;
+  font-size: 0.85rem;
+  color: #b3261e;
+}
+
+.form-field__error svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ---------- Reviewed (not sent) panel ---------- */
+.enquiry-review {
+  margin-top: 1rem;
+  padding: 1.1rem;
+  border: 1px solid var(--gold);
+  border-radius: var(--radius);
+  background: var(--ivory);
+  font-size: 0.92rem;
+}
+
+.enquiry-review p {
+  margin: 0 0 0.9rem;
+}
+
+.enquiry-review__head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: var(--green);
+}
+
+.enquiry-review__list {
+  margin: 0 0 1rem;
+}
+
+.enquiry-review__list div {
+  padding: 0.5rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.enquiry-review__list dt {
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.enquiry-review__list dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}

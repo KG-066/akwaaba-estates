@@ -1,0 +1,129 @@
+﻿/* ---------- Story section ---------- */
+.about-story {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .about-story {
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+  }
+}
+
+.about-story__text p {
+  max-width: 60ch;
+  color: var(--ink);
+}
+
+.about-story__text .section__title {
+  margin-bottom: 1rem;
+}
+
+.about-panel {
+  padding: 2rem;
+  color: var(--ivory);
+  background: linear-gradient(135deg, var(--green-dark) 0%, var(--green) 55%, var(--green-light) 100%);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.about-panel__title {
+  margin: 0 0 1.25rem;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.about-panel__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.85rem 0;
+  border-top: 1px solid rgba(248, 246, 240, 0.15);
+}
+
+.about-panel__list li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.about-panel__list svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--gold);
+}
+
+.about-panel__list strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.about-panel__list span {
+  font-size: 0.9rem;
+  color: rgba(248, 246, 240, 0.8);
+}
+
+/* ---------- How we work ---------- */
+.steps {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+  counter-reset: step;
+}
+
+@media (min-width: 800px) {
+  .steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.step {
+  position: relative;
+  padding: 1.75rem 1.5rem 1.5rem;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+}
+
+.step::before {
+  counter-increment: step;
+  content: '0' counter(step);
+  display: block;
+  margin-bottom: 0.75rem;
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--gold);
+}
+
+.step__title {
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.step__text {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+/* ---------- Demo notice ---------- */
+.demo-notice {
+  max-width: 70ch;
+  margin: 2rem auto 0;
+  padding: 0.9rem 1.1rem;
+  border-left: 4px solid var(--gold);
+  background: var(--ivory-dark);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
